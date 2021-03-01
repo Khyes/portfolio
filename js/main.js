@@ -3,16 +3,7 @@ AOS.init({
     easing: 'slide'
 });
 
-$(function () { 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 250) { 
-            $('.navbar .navbar-brand img').attr('src','/img/LOGOlong.png');
-        }
-        if ($(this).scrollTop() < 250) { 
-            $('.navbar .navbar-brand img').attr('src','/img/logolongwhite.png');
-        }
-    })
-});
+
 
 (function($) {
 

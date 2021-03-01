@@ -1,0 +1,20 @@
+#black-bg {
+    background-color: rgba(0, 0, 0, 0.884);
+    color:rgba(255, 255, 255, 0.849);
+}
+
+#white-sub {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+#white-h2 {
+    color: white;
+}
+
+#white-h3 {
+    color: white;
+}
+
+.workflow-icon {
+    font-size: 3rem;
+}
