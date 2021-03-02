@@ -356,7 +356,7 @@
 
           h2.services-txt {
               font-weight: 900;
-              font-size: 2.8rem;
+              font-size: 3rem;
               margin-top:-0.1rem;
               color: rgba(0, 0, 0, 0.863);
           }
@@ -7433,7 +7433,7 @@ pre {
                 padding-bottom: .9rem;
                 padding-left: 20px;
                 padding-right: 20px;
-                color: #f0f0f0;
+                color: #ffffff;
                 font-weight: 400;
                 opacity: 1 !important; }
                 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
@@ -7465,7 +7465,7 @@ pre {
                       display: none; } }
               .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
                 color: #fff;
-                border: 1px solid rgba(255, 255, 255, 0.3);
+                border: 1px solid rgb(255, 255, 255);
                 padding-top: .5rem;
                 padding-bottom: .5rem;
                 padding-left: 20px;
@@ -7708,8 +7708,11 @@ pre {
             
                 .services-1 {
                     margin-bottom: 40px;
-                    padding: 2em;
-                    background: rgba(255, 255, 255, 0.1);
+                    padding-left: 2em;
+                    padding-right: 2em;
+                    padding-top: 3rem;
+                    padding-bottom: 1rem;
+                    background: rgba(255, 255, 255, 0.479);
                     width: 100%;
                     -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
                     -moz-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
@@ -7803,10 +7806,24 @@ pre {
                 -ms-border-radius: 30px;
                 border-radius: 30px;
                 border-width: 2px;
+                -webkit-transition-duration: 0.6s;
+                transition-duration: 0.6s;
+                -webkit-transition-property: color, background-color;
+                transition-property: color, background-color;
                 color: #fff; }
                 .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
-                  background: #fff;
+                    -webkit-animation-name: hvr-back-pulse;
+                    animation-name: hvr-back-pulse;
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+                    -webkit-animation-delay: 0.6s;
+                    animation-delay: 0.6s;
+                    -webkit-animation-timing-function: linear;
+                    animation-timing-function: linear;
+                    -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
                   border-color: #fff;
+                  background-color: white;
                   color: var(--green); }
             
             .ftco-section-featured {
