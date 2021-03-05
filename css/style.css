@@ -20,43 +20,69 @@
     font-size: 3rem;
 }
 
-/* Back Pulse */
-@-webkit-keyframes hvr-back-pulse {
-    50% {
-      background-color: rgba(255, 255, 255, 0.75);
-    }
-  }
-  @keyframes hvr-back-pulse {
-    50% {
-      background-color: rgba(255, 255, 255, 0.767);
-    }
-  }
-  .hvr-back-pulse {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    overflow: hidden;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: color, background-color;
-    transition-property: color, background-color;
-  }
-  .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
-    -webkit-animation-name: hvr-back-pulse;
-    animation-name: hvr-back-pulse;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    background-color: #ffffff;
-    color: rgb(6, 218, 129);
-  }
+.btn-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 0px;
+    width: 35rem;
+    margin: 0 auto;
+}
+
+.btn-index p a {
+    width: 10rem;
+}
+
+.btn-last {
+    grid-column: 1 / 4;
+}
+
+.btn-4 {
+    width: 33.5rem!important;
+}
+
+
+
+
+
+.hb-border-bottom-br3 {
+    position: relative;
+    transition-duration: 0.3s;
+    overflow: visible;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px 22px;
+} 
+
+
+.hb-border-bottom-br3::after {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    z-index: 2;
+    margin: 0px;
+    left: 0px;
+    bottom: 0px;
+    border-top-width: 2px;
+    transition: border-top-width 0.1s 0.2s, height 0.2s 0.1s, width 0.2s 0s, margin 0.2s 0s;
+} 
+
+
+.hb-border-bottom-br3:hover::after {
+    width: 60%;
+    height: 0px;
+    border-width: 0px 2px 2px;
+    margin: 0px 20%;
+    transition: border-top-width 0.1s 0s, height 0.2s 0.1s, width 0.2s 0.2s, margin 0.2s 0.2s;
+} 
+
 
 
 

@@ -495,6 +495,7 @@ pre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -2136,10 +2137,6 @@ pre {
             color: #212529;
             background-color: #78d5ef;
             border-color: #78d5ef; }
-            .btn-primary:hover {
-              color: #212529;
-              background-color: #56caeb;
-              border-color: #4ac7ea; }
             .btn-primary:focus, .btn-primary.focus {
               -webkit-box-shadow: 0 0 0 0.2rem rgba(120, 213, 239, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(120, 213, 239, 0.5); }
@@ -6070,6 +6067,8 @@ pre {
               float: left !important; }
             .float-md-right {
               float: right !important; }
+            .float-md-center {
+              float: center !important; }
             .float-md-none {
               float: none !important; } }
           
@@ -6297,6 +6296,10 @@ pre {
           .mt-5,
           .my-5 {
             margin-top: 3rem !important; }
+          
+          .mt-6,
+          .my-6 {
+            margin-top: 6rem !important; }
           
           .mr-5,
           .mx-5 {
@@ -7786,45 +7789,19 @@ pre {
                 background: #fce7f1;
                 border: 2px solid #fce7f1;
                 color: #008d81; }
-                .btn.btn-primary:hover {
-                  border: 2px solid #008d81;
-                  background: transparent;
-                  color: #008d81; }
                 .btn.btn-primary.btn-outline-primary {
                   border: 2px solid #008d81;
                   background: transparent;
                   color: #008d81; }
-                  .btn.btn-primary.btn-outline-primary:hover {
-                    border: 2px solid transparent;
-                    background: #008d81;
-                    color: #fff; }
               .btn.btn-outline-white {
-                border-color: rgba(255, 255, 255, 0.8);
                 background: none;
-                -webkit-border-radius: 30px;
-                -moz-border-radius: 30px;
-                -ms-border-radius: 30px;
-                border-radius: 30px;
-                border-width: 2px;
-                -webkit-transition-duration: 0.6s;
-                transition-duration: 0.6s;
-                -webkit-transition-property: color, background-color;
-                transition-property: color, background-color;
+                border:none;
                 color: #fff; }
-                .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
-                    -webkit-animation-name: hvr-back-pulse;
-                    animation-name: hvr-back-pulse;
-                    -webkit-animation-duration: 1s;
-                    animation-duration: 1s;
-                    -webkit-animation-delay: 0.6s;
-                    animation-delay: 0.6s;
-                    -webkit-animation-timing-function: linear;
-                    animation-timing-function: linear;
-                    -webkit-animation-iteration-count: infinite;
-                    animation-iteration-count: infinite;
-                  border-color: #fff;
-                  background-color: white;
-                  color: var(--green); }
+
+                .btn.btn-outline-white:hover {
+                    background none;
+                }
+
             
             .ftco-section-featured {
               margin-top: -250px;
@@ -8310,8 +8287,8 @@ pre {
             
             .ftco-footer {
               font-size: 16px;
-              background: #008d81;
-              padding: 12em 0 8em 0; }
+              background: #00be49;
+              padding: 6em 0em 2em 2em; }
               .ftco-footer .ftco-footer-logo {
                 text-transform: uppercase;
                 letter-spacing: .1em; }
@@ -8348,7 +8325,7 @@ pre {
                 position: relative; }
                 .ftco-footer-social li a span {
                   position: absolute;
-                  font-size: 26px;
+                  font-size: 30px;
                   top: 50%;
                   left: 50%;
                   -webkit-transform: translate(-50%, -50%);
